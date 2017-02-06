@@ -4,7 +4,7 @@ const increment = require('./lib/increment-views')
 
 module.exports = async (req, res) => {
   const orig = req.headers.origin
-  if (/https:\/\/(.*\.)?rauchg\.com/.test(orig)) {
+  if (/https:\/\/(.*\.)?jhonny\.now\.com/.test(orig)) {
     res.setHeader('Access-Control-Allow-Origin', orig)
     res.setHeader('Access-Control-Allow-Methods', 'GET')
   }
