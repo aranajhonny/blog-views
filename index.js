@@ -4,11 +4,14 @@ const increment = require('./lib/increment-views')
 
 module.exports = async (req, res) => {
   const orig = req.headers.origin
-  if (/https:\/\/(.*\.)?jhonny\.now\.com/.test(orig)) {
+  if (/https:\/\/(.*\.)?criollo\.now\.sh/.test(orig)) {
     res.setHeader('Access-Control-Allow-Origin', orig)
     res.setHeader('Access-Control-Allow-Methods', 'GET')
   }
-
+  if (/https:\/\/(.*\.)?viewsad\.now\.sh/.test(orig)) {
+    res.setHeader('Access-Control-Allow-Origin', orig)
+    res.setHeader('Access-Control-Allow-Methods', 'GET')
+  }
   // ensure no duplicate voting
   verify(req)
 
