@@ -8,7 +8,7 @@ module.exports = async (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', orig)
     res.setHeader('Access-Control-Allow-Methods', 'GET')
   }
-  if (/https:\/\/(.*\.)?viewsad\.now\.sh/.test(orig)) {
+  if (/https:\/\/(.*\.)?viewcount\.now\.sh/.test(orig)) {
     res.setHeader('Access-Control-Allow-Origin', orig)
     res.setHeader('Access-Control-Allow-Methods', 'GET')
   }
