@@ -3,9 +3,9 @@
   "dependencies": {
     "firebase": "^3.6.4",
     "firebase-admin": "^4.0.4",
-    "micro": "^6.1.0",
-    "ms": "^0.7.2",
-    "request-ip": "^1.2.3"
+    "micro": "^7.2.0",
+    "ms": "^1.0.0",
+    "request-ip": "^2.0.1"
   },
   "now": {
     "files": [
